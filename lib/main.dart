@@ -14,14 +14,50 @@ Future<void> main() async {
 
   // Get any initial links
 
-  runApp(const MyApp());
+  runApp( const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  FirebaseDynamicLinks dynamicLinks = FirebaseDynamicLinks.instance;
   // This widget is the root of your application.
   @override
+
+  void initState(){
+    // initDynamicLinks();
+    initDynamicLink();
+    super.initState();
+  }
+
+  Future<void> initDynamicLinks() async {
+    dynamicLinks.onLink.listen((dynamicLinkData) {
+      print('app is here');
+      Navigator.pushNamed(context,'/helloworld' );
+
+    }).onError((error) {
+      print('onLink error');
+      print(error.message);
+    });
+  }
+
+  void initDynamicLink() async{
+    dynamicLinks.onLink.listen((PendingDynamicLinkData? dynamicLink) {final Uri? deeplink = dynamicLink?.link;
+
+    if(deeplink!=null){
+      print("deeplink data "+deeplink.queryParameters.values.first);
+      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) =>  _DynamicLinkScreen(),));
+
+
+    } });
+
+  }
+
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
@@ -53,6 +89,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 @override
 void initState(){
   initDynamicLinks();
+  initDynamicLink();
   super.initState();
 }
   Future<void> initDynamicLinks() async {
@@ -65,6 +102,18 @@ void initState(){
       print(error.message);
     });
   }
+
+  void initDynamicLink() async{
+  dynamicLinks.onLink.listen((PendingDynamicLinkData? dynamicLink) {final Uri? deeplink = dynamicLink?.link;
+
+  if(deeplink!=null){
+    print("deeplink data "+deeplink.queryParameters.values.first);
+Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) =>  _DynamicLinkScreen(),));
+   
+
+  } });
+   
+  }
   Future<void> _createDynamicLink(bool short) async {
     setState(() {
       _isCreatingLink = true;
@@ -75,7 +124,7 @@ void initState(){
       longDynamicLink: Uri.parse(
         'https://referandearnra.page.link/?link=https://www.google.com&apn=com.example.firebase_dynamic_link',
       ),
-      link: Uri.parse(DynamicLink),
+      link: Uri.parse(Link),
       androidParameters: const AndroidParameters(
         packageName: 'com.example.firebase_dynamic_link',
         minimumVersion: 0,

@@ -1,0 +1,258 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.firebase_dynamic_link"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/liritharan/StudioProjects/firebase_dynamic_link/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/liritharan/StudioProjects/firebase_dynamic_link/android/app/src/debug/AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:23:22-76
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:24:5-68
+17-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:24:22-65
+18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+18-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+18-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.firebase_dynamic_link.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.firebase_dynamic_link.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+28        android:name="android.app.Application"
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] /Users/liritharan/.gradle/caches/transforms-3/9008b2a9fb01102d26fd2f78c055a96b/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+32        android:label="firebase_dynamic_link" >
+33        <activity
+34            android:name="com.example.firebase_dynamic_link.MainActivity"
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36            android:exported="true"
+37            android:hardwareAccelerated="true"
+38            android:launchMode="singleTop"
+39            android:theme="@style/LaunchTheme"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51            <meta-data
+52                android:name="flutter_deeplinking_enabled"
+53                android:value="true" />
+54
+55            <intent-filter android:autoVerify="true" >
+56                <action android:name="android.intent.action.VIEW" />
+57
+58                <category android:name="android.intent.category.DEFAULT" />
+59                <category android:name="android.intent.category.BROWSABLE" />
+60
+61                <data
+62                    android:host="referandearnra.page.link"
+63                    android:scheme="https" />
+64                <data android:scheme="https" />
+65            </intent-filter>
+66            <intent-filter>
+67                <action android:name="android.intent.action.MAIN" />
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+77            android:name="flutterEmbedding"
+78            android:value="2" />
+79
+80        <service
+80-->[:firebase_dynamic_links] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
+81            android:name="com.google.firebase.components.ComponentDiscoveryService"
+81-->[:firebase_dynamic_links] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-89
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+83            android:exported="false" >
+83-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/6b2c42d1293700361c41e3d371190429/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:10:13-37
+84            <meta-data
+84-->[:firebase_dynamic_links] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+85-->[:firebase_dynamic_links] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:firebase_dynamic_links] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+87            <meta-data
+87-->[:firebase_core] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+88-->[:firebase_core] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:firebase_core] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/6b2c42d1293700361c41e3d371190429/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:11:13-13:85
+91                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+91-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/6b2c42d1293700361c41e3d371190429/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:12:17-126
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/6b2c42d1293700361c41e3d371190429/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:13:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/8bb14f8df67f45a9a0b1d0b04b1ca640/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:14:13-16:85
+94                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+94-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/8bb14f8df67f45a9a0b1d0b04b1ca640/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:15:17-113
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/8bb14f8df67f45a9a0b1d0b04b1ca640/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:16:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/liritharan/.gradle/caches/transforms-3/6a771cc24a22b372931f14fc45ee84f1/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+97                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+97-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/liritharan/.gradle/caches/transforms-3/6a771cc24a22b372931f14fc45ee84f1/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/liritharan/.gradle/caches/transforms-3/6a771cc24a22b372931f14fc45ee84f1/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+99            <meta-data
+99-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+100                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+100-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/d2bd0b695c88934fbdbe21fb340a63c9/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-installations:17.1.1] /Users/liritharan/.gradle/caches/transforms-3/4a92e81ed662ae26fbd4c76d3b0fb6c9/transformed/jetified-firebase-installations-17.1.1/AndroidManifest.xml:17:13-19:85
+103                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+103-->[com.google.firebase:firebase-installations:17.1.1] /Users/liritharan/.gradle/caches/transforms-3/4a92e81ed662ae26fbd4c76d3b0fb6c9/transformed/jetified-firebase-installations-17.1.1/AndroidManifest.xml:18:17-127
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-installations:17.1.1] /Users/liritharan/.gradle/caches/transforms-3/4a92e81ed662ae26fbd4c76d3b0fb6c9/transformed/jetified-firebase-installations-17.1.1/AndroidManifest.xml:19:17-82
+105        </service>
+106        <!--
+107           Declares a provider which allows us to store files to share in
+108           '.../caches/share_plus' and grant the receiving action access
+109        -->
+110        <provider
+110-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:20
+111            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+111-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-77
+112            android:authorities="com.example.firebase_dynamic_link.flutter.share_provider"
+112-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-74
+113            android:exported="false"
+113-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+114            android:grantUriPermissions="true" >
+114-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-47
+115            <meta-data
+115-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+116                android:name="android.support.FILE_PROVIDER_PATHS"
+116-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+117                android:resource="@xml/flutter_share_file_paths" />
+117-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+118        </provider>
+119        <!--
+120           This manifest declared broadcast receiver allows us to use an explicit
+121           Intent when creating a PendingItent to be informed of the user's choice
+122        -->
+123        <receiver
+123-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-34:20
+124            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+124-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-82
+125            android:exported="true" >
+125-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+126            <intent-filter>
+126-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+127                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+127-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-65
+127-->[:share_plus] /Users/liritharan/StudioProjects/firebase_dynamic_link/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-62
+128            </intent-filter>
+129        </receiver>
+130
+131        <uses-library
+131-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+132            android:name="androidx.window.extensions"
+132-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+133            android:required="false" />
+133-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+134        <uses-library
+134-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+135            android:name="androidx.window.sidecar"
+135-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+136            android:required="false" />
+136-->[androidx.window:window:1.0.0-beta04] /Users/liritharan/.gradle/caches/transforms-3/40ff8c014bc3b03149787e1d45a42dea/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+137
+138        <provider
+138-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
+139            android:name="com.google.firebase.provider.FirebaseInitProvider"
+139-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:26:13-77
+140            android:authorities="com.example.firebase_dynamic_link.firebaseinitprovider"
+140-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:27:13-72
+141            android:directBootAware="true"
+141-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:28:13-43
+142            android:exported="false"
+142-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:29:13-37
+143            android:initOrder="100" />
+143-->[com.google.firebase:firebase-common:20.3.0] /Users/liritharan/.gradle/caches/transforms-3/dbca14ae8831d3272c2dc3ee92f824c5/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:30:13-36
+144
+145        <activity
+145-->[com.google.android.gms:play-services-base:18.0.1] /Users/liritharan/.gradle/caches/transforms-3/8f31701e663a8c1514b353cc4d7239a2/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+146            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+146-->[com.google.android.gms:play-services-base:18.0.1] /Users/liritharan/.gradle/caches/transforms-3/8f31701e663a8c1514b353cc4d7239a2/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+147            android:exported="false"
+147-->[com.google.android.gms:play-services-base:18.0.1] /Users/liritharan/.gradle/caches/transforms-3/8f31701e663a8c1514b353cc4d7239a2/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.google.android.gms:play-services-base:18.0.1] /Users/liritharan/.gradle/caches/transforms-3/8f31701e663a8c1514b353cc4d7239a2/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+149
+150        <receiver
+150-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+151            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+151-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+153            android:exported="false" >
+153-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+154        </receiver>
+155
+156        <service
+156-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+157            android:name="com.google.android.gms.measurement.AppMeasurementService"
+157-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+158            android:enabled="true"
+158-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+159            android:exported="false" />
+159-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+160        <service
+160-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+161            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+161-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+162            android:enabled="true"
+162-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" />
+164-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/liritharan/.gradle/caches/transforms-3/a79014913e4c8d516fcb72ca13244185/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+165
+166        <meta-data
+166-->[com.google.android.gms:play-services-basement:18.1.0] /Users/liritharan/.gradle/caches/transforms-3/ad3fb7e0e58165c0e3c87f8f0d79631f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+167            android:name="com.google.android.gms.version"
+167-->[com.google.android.gms:play-services-basement:18.1.0] /Users/liritharan/.gradle/caches/transforms-3/ad3fb7e0e58165c0e3c87f8f0d79631f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+168            android:value="@integer/google_play_services_version" />
+168-->[com.google.android.gms:play-services-basement:18.1.0] /Users/liritharan/.gradle/caches/transforms-3/ad3fb7e0e58165c0e3c87f8f0d79631f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+169    </application>
+170
+171</manifest>

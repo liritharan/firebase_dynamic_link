@@ -23,12 +23,16 @@
             <meta-data
                 android:name="flutter_deeplinking_enabled"
                 android:value="true" />
-            <intent-filter>
+            <intent-filter android:autoVerify = 'true'>
+
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="https://referandearnra.page.link"
+                    android:host="referandearnra.page.link"
+                    android:scheme="https"/>
+                <data
+
                     android:scheme="https"/>
             </intent-filter>
             <intent-filter>
